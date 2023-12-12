@@ -50,6 +50,9 @@
   margin: auto;
 }
 .winner{
+  position: absolute;
+  top: 50%;
+  right: 0%;
   display: flex;
   text-align:center;
   color: #ffff;
@@ -58,22 +61,20 @@
   margin: 0px 0px 20px 0px;
 }
 
-.winner_message {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border: 2px solid #333;
-  border-radius: 5px;
-  transition: transform 0.5s ease-in-out;
-}
+.title_scroll{
+  display: inline-block;
+  white-space: nowrap;
+  animation: Animation 10s linear infinite;
 
-.slide_out {
-  transform: translateX(-100%);
 }
-
+@keyframes Animation {
+      to {
+        transform: translateX(-180%);
+      }
+}
+.celebrate {
+  animation: celebrate 0.8s ease-in-out;
+}
 
 @keyframes celebrate {
   0% {
@@ -85,10 +86,4 @@
   100% {
     transform: scale(1);
   }
-}
-
-
-
-.celebrate {
-  animation: celebrate 0.8s ease-in-out;
 }
