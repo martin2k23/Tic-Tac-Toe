@@ -3,6 +3,7 @@ import circleIcon from './Images/circle.png';
 import crossIcon from './Images/cross.png';
 import './App.css';
 
+
 const iconMapping = {
   'x': `<img src="${crossIcon}" alt="cross"/>`,
   'o': `<img src="${circleIcon}" alt="circle"/>`,
@@ -101,6 +102,8 @@ function App() {
           </div>
         </div>
       )}
+
+    
 
       <button className="button" onClick={resetBoard}>
         Reset
